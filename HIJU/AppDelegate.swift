@@ -18,9 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         db = SQLiteDB.sharedInstance()
-        //db.execute("drop table if exists user")
+        db.execute("drop table if exists user")
         db.execute("create table if not exists user(user_id varchar(20) primary key, password varchar(20) not null)")
-        db.execute("create table if not exists collection(uid integer, artistid integer, foreign key (uid) references user(use_id))")
+        db.execute("create table if not exists collection(uid varchar(20), artistid carchar(20), foreign key (uid) references user(use_id))")
         
         
         return true

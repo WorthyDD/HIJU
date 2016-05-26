@@ -30,10 +30,12 @@ class LoginViewController: UIViewController {
         
         let data = db.query("select * from user")
         for var user in data{
-            let userID = user["user_id"]
-            let password = user["password"]
+            let userID = user["user_id"]!
+            let password = user["password"]!
             print("\(userID),\(password)")
         }
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     @IBAction func didTapLogin(sender: UIButton) {
         
@@ -45,6 +47,7 @@ class LoginViewController: UIViewController {
         let data = db.query("select * from user where user_id ='\(userID)'")
         if(data.count==0){
             CustomToast .showHudToastWithString("没有此用户, 请注册")
+            userIDTextField.text = ""
             return
         }
         let row = data[0]
@@ -54,10 +57,13 @@ class LoginViewController: UIViewController {
                 //登录成功
                 print("login success!")
                 CustomToast.showHudToastWithString("登录成功!")
-                NSUserDefaults.standardUserDefaults().setBool(true, forKey: kLoginBool)
+                NSUserDefaults.standardUserDefaults().setObject(userID, forKey: kUserIDStore)
+                NSNotificationCenter.defaultCenter().postNotificationName(kUserStatusChangeNotification, object: nil)
+                self.dismissViewControllerAnimated(true, completion: nil)
             }
             else{
                 CustomToast.showHudToastWithString("密码错误")
+                passwordTextfield.text = ""
             }
         }
         
@@ -98,6 +104,8 @@ class LoginViewController: UIViewController {
             else{
                 self.db.execute("insert into user(user_id, password) values('\(userID)','\(password)')")
                 CustomToast.showHudToastWithString("注册成功, 请登录!")
+                self.userIDTextField.text = ""
+                self.passwordTextfield.text = ""
             }
             
             
@@ -106,8 +114,5 @@ class LoginViewController: UIViewController {
         self.presentViewController(alertVC, animated: true, completion: nil)
     }
 
-    @IBAction func didTapForget(sender: UIButton) {
-        
-    }
 
 }

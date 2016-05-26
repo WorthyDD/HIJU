@@ -8,7 +8,7 @@
 
 import UIKit
 
-let kLoginBool = "is_logged_in"
+let kUserIDStore = "user_id_store"
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -16,11 +16,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         
-        self.checkLogin()
-        
+//        self.checkLogin()
     
     }
 
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        self.checkLogin()
+    }
 
     @IBAction func didTapEatButton(sender: UIButton) {
         
@@ -48,12 +51,12 @@ class ViewController: UIViewController {
     }
     
     func checkLogin() {
-        if NSUserDefaults.standardUserDefaults().boolForKey(kLoginBool){
+        if NSUserDefaults.standardUserDefaults().objectForKey(kUserIDStore) != nil{
             print("已登录")
         }
         else{
             
-            let vc = (self.storyboard?.instantiateViewControllerWithIdentifier("loginVC"))! as UIViewController
+            let vc = (self.storyboard?.instantiateViewControllerWithIdentifier("loginVC"))! as! LoginViewController
             self .presentViewController(vc, animated: true, completion: nil)
         }
     }
