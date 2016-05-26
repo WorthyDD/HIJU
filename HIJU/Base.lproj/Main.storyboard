@@ -86,6 +86,9 @@
                                 <state key="normal" title="我的收藏">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapMyCollectionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wes-tr-wcf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mza-0h-EKj">
                                 <rect key="frame" x="168" y="402" width="136" height="136"/>
@@ -630,6 +633,9 @@
                     <navigationItem key="navigationItem" id="nYK-AD-2IS"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="aboutView" destination="sRR-cj-VqA" id="mV3-tA-QgF"/>
+                        <outlet property="clearCacheView" destination="bWl-Y0-36W" id="WJf-kA-A9j"/>
+                        <outlet property="helpView" destination="ZdP-6V-v23" id="QoR-Lr-Jf5"/>
                         <outlet property="loginButton" destination="uvf-0f-Qgi" id="Fci-pI-6iL"/>
                         <outlet property="userIDLabel" destination="47U-0J-1Wj" id="2hd-9H-BAQ"/>
                     </connections>

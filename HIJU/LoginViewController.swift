@@ -63,6 +63,7 @@ class LoginViewController: UIViewController {
             }
             else{
                 CustomToast.showHudToastWithString("密码错误")
+                userIDTextField.text = ""
                 passwordTextfield.text = ""
             }
         }

@@ -50,6 +50,13 @@ class ViewController: UIViewController {
         self.presentViewController(contentVC, animated: true, completion: nil)
     }
     
+    @IBAction func didTapMyCollectionButton(sender: UIButton) {
+        
+        let contentVC  = self.storyboard?.instantiateViewControllerWithIdentifier("contentVC") as! ContentViewController
+        contentVC.type = ContentType.Collection
+        self.presentViewController(contentVC, animated: true, completion: nil)
+    }
+    
     func checkLogin() {
         if NSUserDefaults.standardUserDefaults().objectForKey(kUserIDStore) != nil{
             print("已登录")

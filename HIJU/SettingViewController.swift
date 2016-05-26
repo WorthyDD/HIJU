@@ -9,14 +9,30 @@
 import UIKit
 
 let kUserStatusChangeNotification = "user_status_did_change"
+
+
 class SettingViewController: UIViewController {
 
     @IBOutlet weak var userIDLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
+    
+    @IBOutlet weak var clearCacheView: UIView!
+    @IBOutlet weak var aboutView: UIView!
+    @IBOutlet weak var helpView: UIView!
+    
     var isLogin = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tap1 = UITapGestureRecognizer(target: self, action: #selector(SettingViewController.didTapClearCacheView))
+        clearCacheView.addGestureRecognizer(tap1)
+        let tap2 = UITapGestureRecognizer(target: self, action: #selector(SettingViewController.didTapAboutView))
+        aboutView.addGestureRecognizer(tap2)
+        let tap3 = UITapGestureRecognizer(target: self, action: #selector(SettingViewController.didTapHelpView))
+        aboutView.addGestureRecognizer(tap3)
+
+        
         self.refreshLoginState()
         NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(SettingViewController.didReciveUserChangeNotification(_:)), name: kUserStatusChangeNotification, object: nil)
     }
@@ -39,6 +55,19 @@ class SettingViewController: UIViewController {
     
     @IBAction func didTapBack(sender: UIButton) {
         self .dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
+    func didTapClearCacheView(){
+        CustomToast.showHudToastWithString("已为您清理缓存~")
+    }
+    
+    func didTapAboutView(){
+        
+    }
+    
+    func didTapHelpView(){
+        
     }
     
     @IBAction func didTapLoginButton(sender: UIButton) {

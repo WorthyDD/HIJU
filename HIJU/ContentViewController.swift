@@ -13,6 +13,7 @@ enum ContentType{
     case Sing
     case Table
     case Play
+    case Collection
 }
 
 
@@ -38,6 +39,9 @@ class ContentViewController: UIViewController, UITableViewDelegate, UITableViewD
             break
         case .Play:
             titleButton.setTitle("Play", forState: UIControlState.Normal)
+            break
+        case .Collection:
+            titleButton.setTitle("我的收藏", forState: UIControlState.Normal)
             break
         }
     }
