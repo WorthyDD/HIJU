@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "22119E3CBD0A713412EEE72C4316D9D56F558F99",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "22119E3CBD0A713412EEE72C4316D9D56F558F99" : 0,
+    "BF606EBDF3315E78ADBE432953A5D9CE4697B7ED" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4F3B196F-3D4E-4CA7-9AB3-3FB806B33322",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "22119E3CBD0A713412EEE72C4316D9D56F558F99" : "HIJU%202\/",
+    "BF606EBDF3315E78ADBE432953A5D9CE4697B7ED" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HIJU",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HIJU.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/WorthyDD\/HIJU.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "22119E3CBD0A713412EEE72C4316D9D56F558F99"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/WorthyDD\/AirMonitor.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BF606EBDF3315E78ADBE432953A5D9CE4697B7ED"
+    }
+  ]
+}

@@ -57,6 +57,7 @@ class LoginViewController: UIViewController {
                 //登录成功
                 print("login success!")
                 CustomToast.showHudToastWithString("登录成功!")
+                ConstantManager.shareInstance.userID = userID
                 NSUserDefaults.standardUserDefaults().setObject(userID, forKey: kUserIDStore)
                 NSNotificationCenter.defaultCenter().postNotificationName(kUserStatusChangeNotification, object: nil)
                 self.dismissViewControllerAnimated(true, completion: nil)
@@ -74,7 +75,7 @@ class LoginViewController: UIViewController {
         
         let alertVC = UIAlertController(title: "注册", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
         alertVC.addTextFieldWithConfigurationHandler { (textField) in
-            textField.placeholder = "请输入帐号"
+            textField.placeholder = "请输入帐号(纯数字)"
             textField.keyboardType = .EmailAddress
         }
         alertVC.addTextFieldWithConfigurationHandler { (textField) in

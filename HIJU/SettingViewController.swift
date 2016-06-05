@@ -79,6 +79,7 @@ class SettingViewController: UIViewController {
         else{
             NSUserDefaults.standardUserDefaults().removeObjectForKey(kUserIDStore)
             CustomToast.showHudToastWithString("已退出")
+            ConstantManager.shareInstance.userID = nil
             self.refreshLoginState()
         }
     }

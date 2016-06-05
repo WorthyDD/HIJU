@@ -23,8 +23,21 @@
 		CC045D121CF44C8200A39208 /* UIView+IBInspect.m in Sources */ = {isa = PBXBuildFile; fileRef = CC045D111CF44C8200A39208 /* UIView+IBInspect.m */; };
 		CC045D151CF4576E00A39208 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CC045D141CF4576E00A39208 /* MBProgressHUD.m */; };
 		CC045D181CF4579900A39208 /* CustomToast.m in Sources */ = {isa = PBXBuildFile; fileRef = CC045D171CF4579900A39208 /* CustomToast.m */; };
+		CCA68E171D03D1F700B16F63 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA68E161D03D1F700B16F63 /* WebViewController.swift */; };
+		CCA68E1A1D03DD0100B16F63 /* yuli.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCA68E191D03DD0100B16F63 /* yuli.jpg */; };
+		CCA68E1C1D03DD8B00B16F63 /* ArticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA68E1B1D03DD8B00B16F63 /* ArticalViewController.swift */; };
 		CCD1EA681CF691880032D497 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD1EA671CF691880032D497 /* SettingViewController.swift */; };
 		CCD1EA6A1CF69A790032D497 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD1EA691CF69A790032D497 /* ContentViewController.swift */; };
+		CCD23B191D000364006D8794 /* artical.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCD23B181D000364006D8794 /* artical.plist */; };
+		CCF6F59E1D02B6B200DA5E6F /* ConstantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF6F59D1D02B6B200DA5E6F /* ConstantManager.swift */; };
+		CCF6F5A11D02C3D100DA5E6F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF6F5A01D02C3D100DA5E6F /* Activity.swift */; };
+		CCF6F5A31D02C41400DA5E6F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF6F5A21D02C41400DA5E6F /* Item.swift */; };
+		CCF6F5A51D02CCA300DA5E6F /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF6F5A41D02CCA300DA5E6F /* Category.swift */; };
+		CCF6F5A81D02D02400DA5E6F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF6F5A71D02D02400DA5E6F /* HeaderView.swift */; };
+		CCF6F5AA1D02D03500DA5E6F /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF6F5A91D02D03500DA5E6F /* HeaderView.xib */; };
+		CCF6F5AE1D02E32B00DA5E6F /* ArticalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF6F5AC1D02E32B00DA5E6F /* ArticalCell.swift */; };
+		CCF6F5AF1D02E32B00DA5E6F /* ArticalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF6F5AD1D02E32B00DA5E6F /* ArticalCell.xib */; };
+		CCF6F5B11D02F2F400DA5E6F /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF6F5B01D02F2F400DA5E6F /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +75,7 @@
 		CC045CEE1CF439AA00A39208 /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SQLTable.swift; path = HIJU/SQLite/SQLTable.swift; sourceTree = "<group>"; };
 		CC045CEF1CF439AA00A39208 /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String-Extras.swift"; path = "HIJU/SQLite/String-Extras.swift"; sourceTree = "<group>"; };
 		CC045CF31CF439BE00A39208 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
-		CC045CF91CF43CEB00A39208 /* HIJU-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HIJU-Bridging-Header.h"; sourceTree = "<group>"; };
+		CC045CF91CF43CEB00A39208 /* HIJU-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HIJU-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		CC045D0C1CF4458D00A39208 /* data.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.db; sourceTree = "<group>"; };
 		CC045D0E1CF44C0200A39208 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CC045D101CF44C8200A39208 /* UIView+IBInspect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+IBInspect.h"; path = "HIJU/Tools/UIView+IBInspect.h"; sourceTree = "<group>"; };
@@ -71,8 +84,21 @@
 		CC045D141CF4576E00A39208 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		CC045D161CF4579900A39208 /* CustomToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomToast.h; sourceTree = "<group>"; };
 		CC045D171CF4579900A39208 /* CustomToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomToast.m; sourceTree = "<group>"; };
+		CCA68E161D03D1F700B16F63 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		CCA68E191D03DD0100B16F63 /* yuli.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yuli.jpg; sourceTree = "<group>"; };
+		CCA68E1B1D03DD8B00B16F63 /* ArticalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticalViewController.swift; sourceTree = "<group>"; };
 		CCD1EA671CF691880032D497 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		CCD1EA691CF69A790032D497 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		CCD23B181D000364006D8794 /* artical.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = artical.plist; sourceTree = "<group>"; };
+		CCF6F59D1D02B6B200DA5E6F /* ConstantManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConstantManager.swift; path = HIJU/ConstantManager.swift; sourceTree = "<group>"; };
+		CCF6F5A01D02C3D100DA5E6F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		CCF6F5A21D02C41400DA5E6F /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CCF6F5A41D02CCA300DA5E6F /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		CCF6F5A71D02D02400DA5E6F /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		CCF6F5A91D02D03500DA5E6F /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		CCF6F5AC1D02E32B00DA5E6F /* ArticalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticalCell.swift; sourceTree = "<group>"; };
+		CCF6F5AD1D02E32B00DA5E6F /* ArticalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticalCell.xib; sourceTree = "<group>"; };
+		CCF6F5B01D02F2F400DA5E6F /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +130,6 @@
 		CC045CAF1CF4390C00A39208 = {
 			isa = PBXGroup;
 			children = (
-				CC045CF91CF43CEB00A39208 /* HIJU-Bridging-Header.h */,
-				CC045CF81CF43CD100A39208 /* FMDB */,
-				CC045CEB1CF4393500A39208 /* Tools */,
-				CC045CEA1CF4392F00A39208 /* SQL */,
 				CC045CBA1CF4390C00A39208 /* HIJU */,
 				CC045CCF1CF4390C00A39208 /* HIJUTests */,
 				CC045CDA1CF4390C00A39208 /* HIJUUITests */,
@@ -128,10 +150,14 @@
 		CC045CBA1CF4390C00A39208 /* HIJU */ = {
 			isa = PBXGroup;
 			children = (
-				CC045CBD1CF4390C00A39208 /* ViewController.swift */,
-				CCD1EA691CF69A790032D497 /* ContentViewController.swift */,
-				CCD1EA671CF691880032D497 /* SettingViewController.swift */,
-				CC045D0E1CF44C0200A39208 /* LoginViewController.swift */,
+				CCA68E181D03DCDE00B16F63 /* image */,
+				CC045CF91CF43CEB00A39208 /* HIJU-Bridging-Header.h */,
+				CC045CF81CF43CD100A39208 /* FMDB */,
+				CC045CEB1CF4393500A39208 /* Tools */,
+				CC045CEA1CF4392F00A39208 /* SQL */,
+				CCF6F59F1D02C3AC00DA5E6F /* Modal */,
+				CCF6F5A61D02CFD900DA5E6F /* View */,
+				CCF6F5AB1D02D08800DA5E6F /* ViewController */,
 				CC045CE91CF4391400A39208 /* Support */,
 			);
 			path = HIJU;
@@ -175,6 +201,7 @@
 				CC045CEF1CF439AA00A39208 /* String-Extras.swift */,
 			);
 			name = SQL;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		CC045CEB1CF4393500A39208 /* Tools */ = {
@@ -188,6 +215,7 @@
 				CC045D111CF44C8200A39208 /* UIView+IBInspect.m */,
 			);
 			name = Tools;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		CC045CF81CF43CD100A39208 /* FMDB */ = {
@@ -197,6 +225,54 @@
 				CC045CF31CF439BE00A39208 /* libsqlite3.0.tbd */,
 			);
 			name = FMDB;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CCA68E181D03DCDE00B16F63 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				CCA68E191D03DD0100B16F63 /* yuli.jpg */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+		CCF6F59F1D02C3AC00DA5E6F /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				CCF6F59D1D02B6B200DA5E6F /* ConstantManager.swift */,
+				CCF6F5A01D02C3D100DA5E6F /* Activity.swift */,
+				CCF6F5A41D02CCA300DA5E6F /* Category.swift */,
+				CCF6F5A21D02C41400DA5E6F /* Item.swift */,
+				CCD23B181D000364006D8794 /* artical.plist */,
+			);
+			name = Modal;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CCF6F5A61D02CFD900DA5E6F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCF6F5A71D02D02400DA5E6F /* HeaderView.swift */,
+				CCF6F5A91D02D03500DA5E6F /* HeaderView.xib */,
+				CCF6F5AC1D02E32B00DA5E6F /* ArticalCell.swift */,
+				CCF6F5AD1D02E32B00DA5E6F /* ArticalCell.xib */,
+			);
+			name = View;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CCF6F5AB1D02D08800DA5E6F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CC045CBD1CF4390C00A39208 /* ViewController.swift */,
+				CCD1EA671CF691880032D497 /* SettingViewController.swift */,
+				CC045D0E1CF44C0200A39208 /* LoginViewController.swift */,
+				CCD1EA691CF69A790032D497 /* ContentViewController.swift */,
+				CCF6F5B01D02F2F400DA5E6F /* CollectionViewController.swift */,
+				CCA68E161D03D1F700B16F63 /* WebViewController.swift */,
+				CCA68E1B1D03DD8B00B16F63 /* ArticalViewController.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,7 +380,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC045CC61CF4390C00A39208 /* LaunchScreen.storyboard in Resources */,
+				CCF6F5AF1D02E32B00DA5E6F /* ArticalCell.xib in Resources */,
+				CCA68E1A1D03DD0100B16F63 /* yuli.jpg in Resources */,
+				CCD23B191D000364006D8794 /* artical.plist in Resources */,
 				CC045D0D1CF4458D00A39208 /* data.db in Resources */,
+				CCF6F5AA1D02D03500DA5E6F /* HeaderView.xib in Resources */,
 				CC045CC31CF4390C00A39208 /* Assets.xcassets in Resources */,
 				CC045CC11CF4390C00A39208 /* Main.storyboard in Resources */,
 			);
@@ -331,17 +411,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA68E171D03D1F700B16F63 /* WebViewController.swift in Sources */,
+				CCF6F5B11D02F2F400DA5E6F /* CollectionViewController.swift in Sources */,
 				CC045D0F1CF44C0200A39208 /* LoginViewController.swift in Sources */,
 				CC045CF21CF439AA00A39208 /* String-Extras.swift in Sources */,
 				CC045CF01CF439AA00A39208 /* SQLiteDB.swift in Sources */,
 				CC045CF11CF439AA00A39208 /* SQLTable.swift in Sources */,
+				CCF6F5A31D02C41400DA5E6F /* Item.swift in Sources */,
 				CC045D121CF44C8200A39208 /* UIView+IBInspect.m in Sources */,
 				CCD1EA681CF691880032D497 /* SettingViewController.swift in Sources */,
+				CCA68E1C1D03DD8B00B16F63 /* ArticalViewController.swift in Sources */,
 				CC045D181CF4579900A39208 /* CustomToast.m in Sources */,
 				CC045CBE1CF4390C00A39208 /* ViewController.swift in Sources */,
 				CCD1EA6A1CF69A790032D497 /* ContentViewController.swift in Sources */,
+				CCF6F59E1D02B6B200DA5E6F /* ConstantManager.swift in Sources */,
+				CCF6F5A51D02CCA300DA5E6F /* Category.swift in Sources */,
 				CC045CBC1CF4390C00A39208 /* AppDelegate.swift in Sources */,
+				CCF6F5A11D02C3D100DA5E6F /* Activity.swift in Sources */,
 				CC045D151CF4576E00A39208 /* MBProgressHUD.m in Sources */,
+				CCF6F5A81D02D02400DA5E6F /* HeaderView.swift in Sources */,
+				CCF6F5AE1D02E32B00DA5E6F /* ArticalCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

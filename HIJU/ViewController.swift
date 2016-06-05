@@ -11,6 +11,10 @@ import UIKit
 let kUserIDStore = "user_id_store"
 class ViewController: UIViewController {
 
+    
+    var db = SQLiteDB.sharedInstance()
+    
+    var fist = false
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -52,14 +56,34 @@ class ViewController: UIViewController {
     
     @IBAction func didTapMyCollectionButton(sender: UIButton) {
         
-        let contentVC  = self.storyboard?.instantiateViewControllerWithIdentifier("contentVC") as! ContentViewController
-        contentVC.type = ContentType.Collection
+        let contentVC  = self.storyboard?.instantiateViewControllerWithIdentifier("collectionVC") as! CollectionViewController
         self.presentViewController(contentVC, animated: true, completion: nil)
     }
     
     func checkLogin() {
         if NSUserDefaults.standardUserDefaults().objectForKey(kUserIDStore) != nil{
             print("已登录")
+            
+            if !fist{
+                let data = db.query("select * from collection where uid = \(ConstantManager.shareInstance.userID!)")
+                for var collection in data{
+                    
+                    let uid = collection["uid"]!
+                    let artistid = collection["artistid"] as! String
+                    print("\(uid),\(artistid)")
+                    for i in 0..<ConstantManager.shareInstance.articalList.count{
+                        let item = ConstantManager.shareInstance.articalList[i] as! Item
+                        if item.id == artistid{
+                            ConstantManager.shareInstance.collectionArr.addObject(item)
+                            ConstantManager.shareInstance.collectionKeys.addObject(artistid)
+                        }
+                    }
+                }
+                
+                fist = true
+                
+            }
+
         }
         else{
             
